@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Inter } from "next/font/google"; // Importing Google Fonts (Lato will be used instead)
 
 export const metadata = {
     title: "Video SDK Task",
