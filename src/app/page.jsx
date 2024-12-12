@@ -4,7 +4,7 @@ import EnterPrise from "./Components/EnterPriseSection/EnterPrise";
 
 const Home = () => {
     return (
-        <main>
+        <main className="bg-[#161616] w-screen h-screen overflow-auto py-8">
             {/* Hero Section */}
             <Hero />
 
