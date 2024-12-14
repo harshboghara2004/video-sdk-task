@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "./Components/HeroSection/Hero";
-import EnterPrise from "./Components/EnterPriseSection/EnterPrise";
+import Hero from "./hero/page";
+import EnterPrise from "./enterprise/page";
 
 const Home = () => {
     return (

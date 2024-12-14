@@ -4,16 +4,15 @@ import BodyText from "../TextStyles/BodyText";
 
 const GradientCard = ({ header, description, imageUrl }) => {
     return (
-        <div className="py-8 px-1 pb-0 rounded-lg shadow-lg bg-gradient-to-b from-blue-600 to-purple-900 text-white max-w-md">
+        <div className="w-full h-4/5 py-8 px-2 pb-0 rounded-xl shadow-lg bg-gradient-to-b from-[#536EFFC2] to-[#D2A8FF4D] text-white flex flex-col justify-end">
             <div className="text-center">
                 {/* Header */}
-                <MediumText>Global mesh network</MediumText>
+                <MediumText>{header}</MediumText>
 
                 {/* Description */}
-                <BodyText>
-                    Handle massive concurrent meetings volumes extra content
-                    here
-                </BodyText>
+                <div className="mt-4">
+                    <BodyText>{description}</BodyText>
+                </div>
             </div>
 
             {/* Image */}
@@ -21,7 +20,7 @@ const GradientCard = ({ header, description, imageUrl }) => {
                 <img
                     src={imageUrl}
                     alt={header}
-                    className="w-full h-full object-cover"
+                    className="w-fit h-fit object-cover"
                 />
             </div>
         </div>

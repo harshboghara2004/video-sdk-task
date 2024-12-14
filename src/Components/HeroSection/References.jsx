@@ -9,7 +9,7 @@ const References = () => {
     ];
 
     return (
-        <div className="mt-14 flex flex-row items-center justify-between gap-x-10">
+        <div className="flex flex-col items-center gap-x-10 md:flex-row ">
             {items.map((item, index) => (
                 <ArrowIcon
                     key={index}
