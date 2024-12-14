@@ -50,7 +50,7 @@ const Hero = () => {
                         <br />
                         VideoSDK is the perfect upgrade from Twilio.
                     </BodyText>
-                </div><MediumText>{header}</MediumText>
+                </div>
 
                 {/* Talk to expert button */}
                 <div className="mt-14">
@@ -75,4 +75,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
