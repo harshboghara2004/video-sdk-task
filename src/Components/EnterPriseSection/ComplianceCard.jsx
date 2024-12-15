@@ -22,7 +22,9 @@ const ComplianceCard = ({ svgIcon, header, description, direction }) => {
                 <MediumText>{header}</MediumText>
 
                 {/* Description */}
-                <BodyText>{description}</BodyText>
+                <BodyText textColour="#A8A8A8" textSize={22} opacity={75}>
+                    {description}
+                </BodyText>
 
                 {/* Compliances list */}
                 <ComplianceList />

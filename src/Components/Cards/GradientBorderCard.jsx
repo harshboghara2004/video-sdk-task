@@ -3,6 +3,7 @@ import BodyText from "../TextStyles/BodyText";
 import MediumText from "../TextStyles/MediumText";
 
 const GradientBorderCard = ({ svgIcon, header, description, direction }) => {
+    let gradient = `bg-gradient-to-${direction}`
     return (
         <div
             className={`max-w-[1000px] h-full rounded-2xl bg-gradient-to-br from-[#5568FE8F] to-[#C329BE9F] p-[1.5px]`}
@@ -21,7 +22,7 @@ const GradientBorderCard = ({ svgIcon, header, description, direction }) => {
                 <MediumText>{header}</MediumText>
 
                 {/* Description */}
-                <BodyText>{description}</BodyText>
+                <BodyText textColour="#A8A8A8" textSize={22} opacity={75}>{description}</BodyText>
             </div>
         </div>
     );

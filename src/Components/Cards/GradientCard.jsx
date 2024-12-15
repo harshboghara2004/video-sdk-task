@@ -11,7 +11,9 @@ const GradientCard = ({ header, description, imageUrl }) => {
 
                 {/* Description */}
                 <div className="mt-4">
-                    <BodyText>{description}</BodyText>
+                    <BodyText textColour="#A8A8A8" textSize={22} opacity={75}>
+                        {description}
+                    </BodyText>
                 </div>
             </div>
 

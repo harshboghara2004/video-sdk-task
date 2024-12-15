@@ -1,11 +1,29 @@
 import React from "react";
 
-const BodyText = ({ children }) => {
+const BodyText = ({
+    textColour = "white",
+    textSize = 18,
+    textAlign = "center",
+    opacity = 100,
+    children,
+}) => {
     return (
-        <p className="px-1 text-[#A8A8A8] text-[22px] font-normal font-lato text-center opacity-75">
+        <p
+            className={`
+            mt-2 px-1 
+            text-[${textColour}] 
+            text-[${textSize}px] 
+            font-medium font-lato 
+            text-${textAlign} 
+            opacity-${opacity}`}
+        >
             {children}
         </p>
     );
 };
 
 export default BodyText;
+
+// textSize=18
+// A8A8A8
+// opacity-75

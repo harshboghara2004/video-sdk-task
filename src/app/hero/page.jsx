@@ -44,7 +44,7 @@ const Hero = () => {
 
                 {/* Build description */}
                 <div className="mt-6">
-                    <BodyText>
+                    <BodyText textColour="#A8A8A8" textSize={22} opacity={75}>
                         Built for scalability, security, and seamless
                         integration,
                         <br />
@@ -64,11 +64,11 @@ const Hero = () => {
 
                 {/* Companies */}
                 <div className="mt-32">
-                    <CaptionText>LOVED BY DEVELOPERS AT</CaptionText>
+                    <CaptionText textColour="#B2B2B2">
+                        LOVED BY DEVELOPERS AT
+                    </CaptionText>
                 </div>
-                <div className="mt-16">
-                    <CompanyList />
-                </div>
+                <CompanyList />
             </div>
         </main>
     );

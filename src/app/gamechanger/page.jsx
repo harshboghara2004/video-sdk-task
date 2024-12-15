@@ -1,5 +1,7 @@
 import React from "react";
 import GameChangerCard from "@/Components/Cards/GameChangerCard";
+import HeaderText from "@/Components/TextStyles/HeaderText";
+import BodyText from "@/Components/TextStyles/BodyText";
 
 const GameChanger = () => {
     return (
@@ -18,20 +20,21 @@ const GameChanger = () => {
                 />
                 <div className="w-full h-full pl-10 mt-20">
                     {/* title */}
-                    <div className="px-1 flex flex-col items-start">
-                        <div className="justify-center items-start">
-                            <p className="text-white font-lato text-5xl lg:text-6xl font-bold text-left leading-[54px]">
-                                Game Changing features
-                            </p>
-                        </div>
-                    </div>
+                    <HeaderText textAlign="left">
+                        Game Changing features
+                    </HeaderText>
 
                     {/* lorem */}
-                    <p className="px-1 mt-8 text-[#A8A8A8] text-[22px] font-normal font-lato text-left opacity-75">
+                    <BodyText
+                        textColour="#A8A8A8"
+                        textSize={22}
+                        textAlign="left"
+                        opacity={75}
+                    >
                         Lorem ipsum dolor sit amet consectetur. Nullam rhoncus
                         malesuada in facilisis nunc nec. Turpis turpis massa id
                         donec posuere tortor nisi.
-                    </p>
+                    </BodyText>
                 </div>
             </div>
 

@@ -11,7 +11,7 @@ const EnterPrise = () => {
         <main className="flex flex-col w-full h-full items-center justify-center px-12 py-2">
             {/* Section name */}
             <div className="mt-4">
-                <CaptionText>ENTERPRISE ESSENTIALS</CaptionText>
+                <CaptionText textColour="#B2B2B2">ENTERPRISE ESSENTIALS</CaptionText>
             </div>
 
             {/* Header */}
@@ -23,7 +23,7 @@ const EnterPrise = () => {
 
             {/* Description */}
             <div className="mt-4">
-                <BodyText>
+                <BodyText textColour="#A8A8A8" textSize={22} opacity={75}>
                     VideoSDK seamlessly replaces Twilio, delivering an
                     unparalleled video experience <br /> that auto scales with
                     your needs.

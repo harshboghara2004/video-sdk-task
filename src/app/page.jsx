@@ -5,7 +5,7 @@ import GameChanger from "./gamechanger/page";
 
 const Home = () => {
     return (
-        <main className="bg-[#161616]  overflow-auto py-8">
+        <main className="bg-[#161616] overflow-auto py-8">
             {/* Hero Section */}
             <Hero />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import SmallHeaderText from "../TextStyles/SmallHeaderText";
-import SmallBodyText from "../TextStyles/SmallBodyText";
+import BodyText from "../TextStyles/BodyText";
 
 const GameChangerCard = ({ header, description, isBackGround, isGlobe }) => {
     return (
@@ -13,8 +13,10 @@ const GameChangerCard = ({ header, description, isBackGround, isGlobe }) => {
                             alt=""
                             className="w-8 h-8 mb-4"
                         />
-                        <SmallHeaderText> {header} </SmallHeaderText>
-                        <SmallBodyText>{description}</SmallBodyText>
+                        <SmallHeaderText opacity={80}> {header} </SmallHeaderText>
+                        <BodyText textSize={18} opacity={50} textAlign="left">
+                            {description}
+                        </BodyText>
                     </div>
                     {isBackGround && isGlobe && (
                         <div className="w-full h-full bg-gradient-to-b from-[#342034] to-[#16161600] rounded-2xl items-center px-10">
